@@ -2,6 +2,12 @@
     box-sizing:border-box;
     font-family:'Poppins', sans-serif, arial;
 }
+.show {
+    display:flex !important;
+}
+.hide {
+    display:none !important;
+}
 body {
     margin:0;
     padding:0;
@@ -45,10 +51,115 @@ main .avatar {
 main .avatar img {
     width:110px;
     height:130px;
-    animation:avatar 1.3s infinite;
+    animation:avatar 1.2s infinite;
 }
 @keyframes avatar {
     0%{transform:translateY(0px)}
     50%{transform:translateY(4px)}
     100%{transform:translateY(0px)}
+}
+main .balloon-gb {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    width:310px;
+    height:auto;
+    max-height:120px;
+    color:var(--black-color);
+    border-radius:10px;
+    margin-left:26px;
+    background-color:var(--white-color);
+}
+main .balloon-gb::before {
+    content:'';
+    display:inline-block;
+    position:relative;
+    left:-175px;
+    border:20px solid;
+    border-color:transparent var(--white-color) transparent transparent;
+}
+main .balloon-gb p {
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+    position:absolute;
+}
+.question {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:26px;
+    margin-bottom:26px;
+}
+.question form {
+    display:flex;
+}
+.question input {
+    width:245px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    padding-left:10px;
+    margin-right:15px;
+    border-radius:10px;
+    border:4px solid #E5E5E5;
+}
+.question button {
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    border:4px solid #E5E5E5;
+    background:linear-gradient(0deg, #2BA7F3, #2BA7F3)
+}
+.avatar-name {
+    display:none;
+    align-items:center;
+    justify-content:center;
+}
+main .balloon-avatar {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    width:310px;
+    height:auto;
+    color:var(--black-color);
+    border-radius:10px;
+    margin-right:26px;
+    background-color:var(--white-color);
+}
+main .balloon-avatar::after {
+    content:'';
+    display:inline-block;
+    position:relative;
+    right:-175px;
+    border:30px solid;
+    border-color:transparent transparent transparent var(--white-color);
+}
+main .balloon-avatar p {
+    margin:0;
+    font-size:18px;
+    font-weight:400;
+    position:absolute;
+}
+main .avatar-person {
+    width:80px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background-color:#FFF;
+    border:4px solid #E5E5E5;
+}
+main .avatar-person img {
+    width:30px;
+    height:30px;
 }

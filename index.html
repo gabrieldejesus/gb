@@ -10,12 +10,31 @@
     <body>
         <main>
             <div class="container column">
-                <div id="initial">
-                    <div class="avatar">
-                        <img src="assets/gb.svg" alt="Gb!"/>
+                <div id="initial column">
+                    <div class="gb-hi show">
+                        <div class="avatar">
+                            <img src="assets/gb.svg" alt="Gb!"/>
+                        </div>
+                        <div class="balloon-gb">
+                            <p>
+                                Olá, Eu sou o Gb.<br>
+                                Qual o seu nome ?
+                            </p>
+                        </div>
                     </div>
-                    <div class="balloon">
-                        <p>Olá, Eu sou o Gb. Qual o seu nome ?</p>
+                    <div class="question">
+                        <form id="formulario">
+                            <input type="text" placeholder="Digite seu nome..." id="campo"/>
+                            <button><img src="/assets/send-question.svg" alt="Enviar"></button>
+                        </form>
+                    </div>
+                    <div class="avatar-name">
+                        <div class="balloon-avatar">
+                            <p>Meu nome é <strong id="name">Gabriel de Jesus</strong></p>
+                        </div>
+                        <div class="avatar-person">
+                            <img src="assets/avatar.svg" alt="Avatar"/>
+                        </div>
                     </div>
                 </div>
             </div>
