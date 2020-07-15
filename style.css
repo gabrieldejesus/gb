@@ -2,12 +2,6 @@
     box-sizing:border-box;
     font-family:'Poppins', sans-serif, arial;
 }
-.show {
-    display:flex !important;
-}
-.hide {
-    display:none !important;
-}
 body {
     margin:0;
     padding:0;
@@ -18,6 +12,7 @@ body {
     --black-color:#262D37;
     --white-color:#E5E5E5;
     --blue-color:#2BA7F3;
+    --mode-light:#EEEEEE;
 }
 .container {
     width:600px;
@@ -38,6 +33,9 @@ main #initial {
     display:flex;
     justify-content:center;
 }
+main .gb {
+    display:flex;
+}
 main .avatar {
     width:180px;
     height:180px;
@@ -47,6 +45,14 @@ main .avatar {
     border-radius:50%;
     background-color:#FFF;
     border:10px solid #E5E5E5;
+}
+main .avatar::before {
+    content:'';
+    display:inline-block;
+    position:relative;
+    right:-157px;
+    border:20px solid;
+    border-color:transparent transparent transparent var(--white-color);
 }
 main .avatar img {
     width:110px;
@@ -58,32 +64,17 @@ main .avatar img {
     50%{transform:translateY(4px)}
     100%{transform:translateY(0px)}
 }
-main .balloon-gb {
+main p {
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-left:26px;
     font-size:30px;
-    width:310px;
-    height:auto;
-    max-height:120px;
+    font-weight:bold;
     color:var(--black-color);
     border-radius:10px;
-    margin-left:26px;
+    padding:16px 16px 16px 16px;
     background-color:var(--white-color);
-}
-main .balloon-gb::before {
-    content:'';
-    display:inline-block;
-    position:relative;
-    left:-175px;
-    border:20px solid;
-    border-color:transparent var(--white-color) transparent transparent;
-}
-main .balloon-gb p {
-    margin:0;
-    font-size:30px;
-    font-weight:700;
-    position:absolute;
 }
 .question {
     display:flex;
@@ -134,14 +125,6 @@ main .balloon-avatar {
     border-radius:10px;
     margin-right:26px;
     background-color:var(--white-color);
-}
-main .balloon-avatar::after {
-    content:'';
-    display:inline-block;
-    position:relative;
-    right:-175px;
-    border:30px solid;
-    border-color:transparent transparent transparent var(--white-color);
 }
 main .balloon-avatar p {
     margin:0;
