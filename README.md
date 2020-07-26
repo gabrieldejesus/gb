@@ -2,6 +2,9 @@
 
 ![](assets/web-preview.svg)
 
+## Deployment in
+https://devgabrieldejesus.github.io/gb
+
 ### Some commands
 - Sim
 - Não
