@@ -63,7 +63,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [https://github.com/devgabrieldejesus/gb](https://github.com/devgabrieldejesus/)
 
-## Contributing
+## 🚀 Contributing
 
 1. Fork it (<https://github.com/devgabrieldejesus/gb/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
