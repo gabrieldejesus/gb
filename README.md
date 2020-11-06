@@ -84,7 +84,7 @@ _Português_
 `Visualização da Web`
 ![](assets/web-preview.gif)
 
-## 🕹 Implantação em
+## 🕹 Teste aqui
 https://devgabrieldejesus.github.io/gb
 
 ## 📈 Exemplo de uso
