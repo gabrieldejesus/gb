@@ -75,7 +75,7 @@ To run the project just run the file: `index.html`, type a text in the text area
 
 ## 📝 Meta
 
-Gabriel de Jesus – [My gb](https://gabrieldesenvolvedor.com) – devgabrieldejesus@gmail.com
+Gabriel de Jesus – [My portfolio](https://gabrieldesenvolvedor.com) – devgabrieldejesus@gmail.com
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
